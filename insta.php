@@ -1,5 +1,9 @@
 <?php
 //neveshteh shode tvasatoe #elyas #galikeshi @sudo_avenger
+use Telegram\Bot\Api; 
+
+    $telegram = new Api('781570923:AAGa5eEb_8hRsPIOnR3YCrfDPAxKwf8okUE'); //Устанавливаем токен, полученный у BotFather
+    $result = $telegram -> getWebhookUpdates(); //Передаем в переменную $result полную информацию о сообщении пользователя
 ob_start();
 //token ro inja vared konid
 define('API_KEY','[TOKEN]');
